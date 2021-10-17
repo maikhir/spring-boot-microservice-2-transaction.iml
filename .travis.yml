@@ -8,4 +8,5 @@ before_install:
 script: ./mvnw clean install
 
 notifications:
-  email: maik.hirthe@gmx.de
+  email:
+    - maik.hirthe@gmx.de
