@@ -1,8 +1,11 @@
 language: java
 jdk:
   - openjdk11
-
-script: ./mvnw clean
+  
+before_install:
+  - chmod +x mvnw
+  
+script: ./mvnw clean install
 
 notifications:
   email: maik.hirthe@gmx.de
